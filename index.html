@@ -4,9 +4,147 @@
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
   </head>
+  <header class="Main-header">
+  	<nav class="Main-navigation">
+      <a class="main-header-logo">
+      <img src="img/index-logo.svg" width="368" height="153" alt="логотип">
+      </a>
+      <ul class="site-navigation">
+        <li>
+          <a href="info.html">Информация</a>
+        </li>
+        <li>
+          <a href="news.html">Новости</a>
+        </li>
+        <li>
+          <a href="price-list">Прайс-лист</a>
+        </li>
+        <li>
+          <a href="shop.html">Магазин</a>
+        </li>
+        <li>
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+  		<ul class="user-navigation">
+        <li><a class="login-link" href="ligin.html">Вход</a>
+        </li>
+      </ul>
+  	</nav>
+  </header>
   <body>
+  	<main class="container">
+      <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+  		<section class="features">
+        <h2 class="visually-hidden"> Преимущества </h2>
+        <ul class="features-list">
+          <li class="feature-item">
+            <h3>быстро</h3>
+            <p>Мы делаем свою работу быстро! Два часа пролетит незаметро и вы - счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="feature-item">
+            <h3>круто</h3>
+            <p>абудьте, как вы стриглись раньше. мы мделаем из вас звезду футбола или кино! во всяком случае внешне.</p>
+          </li>
+          <li class="feature-item">
+            <h3>дорого</h3>
+            <p>аши мастера - профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определенный статус?</p>
+          </li>
+        </ul>
+  		</section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+      <div class="main_blocks">
+        <section class="news">
+          <h2>Новости</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
+              <time datetime="2018-01-11">11 января</time>
+            </li>
+            <li class="news-item">
+              <p>в нашей команде пополнение, борис &laquo;бритва&raquo; стригунец, обладатель множества титулов и наград пополнил наши стройные ряды.</p>
+              <time datatime="2018-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class="button" href="news.html">все новости</a>
+        </section>
+        <section class="gallery"> 
+          <h2>фотогалерея</h2>
+            <figure class="gallery-content"> 
+              <a href="#"> <img src="img/studio.jpg" width="286" height="164"> </a>
+              <button class="button gallery-button gallery-button-back">Назад</button>
+              <button class="button gallery-button gallery-button-next">Вперед</button>
+            </figure>
+        </section>
+      </div>
 
+    <div class="main_blocks">
+  	  <section class="contacts">
+  		  <h2>контактная информация</h2>
+  		
+  			<p>барбершоп &laquo;бородинский&raquo;<br>
+  			адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
+  			телефон: +7 (495) 666-02-66
+        </p>
+  		  <p>время работы:<br>
+  			пн-пт: с 10:00 до 22:00<br>
+  			сб-вс: с 10:00 до 19:00</p>
+  		
+  		  <a class="button" href="map.html">как проехать</a>
+        <a class="button" href="contacts.html">обратная связь</a>
+  	   </section>
+
+  	  <section class="appointment">
+  		  <h2>записаться</h2>
+  		  <p class="appointment-info"> укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+  		  <form>
+  			  <input type="" name="">
+  			  <input type="" name="">
+  			  <input type="" name="">
+  			  <input type="" name="">
+  			  <button>Отправить</button>
+  		</form>
+  	</div>
+  </main>
   </body>
+  <footer class="main-footer">
+  	<div class="footer">
+  		<p>барбершоп &laquo;бородинский&raquo;<br>
+        адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
+  		<a href="contacts.html">Как нас найти?</a><br>
+      Телефон: +7(495) 666-02-66</p>
+  	</div>
+
+  	<div class="footer-social">
+      <b>давайте дружить! </b>
+      <ul>
+        <li class="sosial-button vk">
+          <a href="#"></a>
+        </li>
+        <li class="sosial-button fb">
+          <a href="#"></a>
+        </li>
+        <li class="sosial-button ig">
+          <a href="#"></a>
+        </li>
+      </ul>
+  	</div>
+
+  	<div class="footer-copyright">
+  		<b>разработано</b>
+      <a href="htmlacademy.ru" class="button">html_academy</a>
+  	</div>
+  </footer>
+
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <!--Здесь будет форма -->
+    <span class="modal-close">x</span>
+  </section>
+  <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close">x</span>
+  </section>
+
 </html>
